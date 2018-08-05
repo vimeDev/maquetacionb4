@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="s" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Maquetación con Bootstrap4</title>
-    <link rel="stylesheet" href="css/">
-  </head>
-  <body>
+<html lang="es">
 
-    <script src="js/" ></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Maquetación con Bootstrap4</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">RNPM</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto ml-auto pl-5">
+          <a class="nav-item nav-link" href="">Inicio</a>
+          <a class="nav-item nav-link" href="">Servicios</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Nuestros clientes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Servicios</a>
+              <a class="dropdown-item" href="#">Otros servicios</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ademas...</a>
+            </div>
+          </li>
+          <a class="nav-item nav-link" href="">Quiénes somos</a>
+          <a class="nav-item nav-link" href="">Contacto</a>
+        </div>
+        <ul class="nav justify-content-end">
+          <a class="nav-item nav-link btn btn-outline-secondary" href="#exampleModal" data-toggle="modal">Inicio de sesión</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal para el inicio de sesión -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Inicia sesión con tu cuenta!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <!-- formulario de sesión -->
+                <form action="#">
+                  <div class="form-group">
+                    <input type="email" name="" id="" class="form-control" placeholder="Escriba su correo electrónico" required>
+                    <small class="form-text text-muted">Protegido contra spam</small>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="" id="" class="form-control" placeholder="Escriba su contraseña" required>
+                    <small class="form-text text-muted">Validación en el servidor</small>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-outline-success">Iniciar sesión</button>
+                  </div>
+                </form>
+                <!-- forgot password -->
+                <a href="">¿Olvidaste tu contraseña?</a>
+                <hr>
+                <p>¿No tienes una cuenta?
+                  <a href="#"> Registrate aquí </a> ¡es muy fácil!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
 </html>
